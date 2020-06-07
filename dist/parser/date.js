@@ -1,7 +1,10 @@
-import dateData from './data/date.json';
-export const parser = () => {
-    const date = new Date();
-    const today = `${date.getMonth() + 1}-${date.getDate()}`;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.parser = void 0;
+var date_json_1 = require("./data/date.json");
+exports.parser = function () {
+    var date = new Date();
+    var today = date.getMonth() + 1 + "-" + date.getDate();
     console.log('✅ 날짜 파싱 완료');
-    return dateData[today] || null;
+    return date_json_1.default[today] || null;
 };
