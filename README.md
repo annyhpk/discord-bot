@@ -2,5 +2,5 @@
 
 setting-secret
 
-WEBHOOKS: discord web hooks
+WEBHOOKS: discord web hooks  
 WEATHER_API_KEY: openweathermap api key
