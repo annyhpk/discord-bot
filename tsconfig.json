@@ -5,9 +5,9 @@
     "module": "CommonJS",
     "outDir": "./dist",
     "strict": true,
-    // "moduleResolution": "node",
-    // "resolveJsonModule": true,
-    // "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
   }
 }
