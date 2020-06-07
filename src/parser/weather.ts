@@ -5,7 +5,8 @@ import cheerio from 'cheerio';
 import weatherData from './data/weather.json';
 
 export const parse = async() => {
-  const token = process.env.WEATHER_API_KEY;
+  // const token = process.env.WEATHER_API_KEY;
+  const token = "8a267ce943787d208b9fc9e8bbbaaf12";
   const city = 'Samnye-eup';
 
   const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${token}&units=metric`);
