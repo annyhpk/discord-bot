@@ -16,7 +16,6 @@ import discord from './lib/discord';
         weather: parsed.weather,
         news: parsed.news.discordContent,
         date: parsed.date,
-
         url,
       });
     }
