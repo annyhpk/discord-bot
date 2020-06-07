@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import axios from 'axios';
-import weatherData from './data/weather.json';
+import * as weatherData from './data/weather.json';
 export var parse = function () { return __awaiter(void 0, void 0, void 0, function () {
     var token, city, response, data;
     return __generator(this, function (_a) {
