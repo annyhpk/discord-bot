@@ -2,7 +2,7 @@ import * as core from '@actions/core';
 import axios from 'axios';
 import cheerio from 'cheerio';
 
-import * as weatherData from './data/weather.json';
+import weatherData from './data/weather.json';
 
 export const parse = async() => {
   const token = process.env.WEATHER_API_KEY;
