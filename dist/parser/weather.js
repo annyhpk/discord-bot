@@ -16,8 +16,7 @@ exports.parse = void 0;
 const axios_1 = __importDefault(require("axios"));
 const weather_json_1 = __importDefault(require("./data/weather.json"));
 exports.parse = () => __awaiter(void 0, void 0, void 0, function* () {
-    // const token = process.env.WEATHER_API_KEY;
-    const token = "8a267ce943787d208b9fc9e8bbbaaf12";
+    const token = process.env.WEATHER_API_KEY;
     const city = 'Samnye-eup';
     const response = yield axios_1.default.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${token}&units=metric`);
     const data = response.data;
