@@ -46,10 +46,10 @@ exports.parse = function () { return __awaiter(void 0, void 0, void 0, function 
     var response, html, $, titles, links, discordContent, slackContent, i;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, axios_1.default.get('https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko')];
+            case 0: return [4 /*yield*/, axios_1.default.get('https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko').then(function (response) { return response.data; })];
             case 1:
                 response = _a.sent();
-                html = response.data;
+                html = response;
                 $ = cheerio_1.default.load(html, { xmlMode: true });
                 titles = $('item > title').map(function (i, element) { return $(element).text(); }).get();
                 links = $('item > link').map(function (i, element) { return $(element).text(); }).get();
