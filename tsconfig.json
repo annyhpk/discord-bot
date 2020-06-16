@@ -2,12 +2,11 @@
   "compilerOptions": {
     
     "target": "es6",
-    "module": "CommonJS",
+    "module": "ES2015",
     "outDir": "./dist",
     "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   }
