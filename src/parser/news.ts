@@ -2,7 +2,7 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 
 export const parse = async() => {
-  const response = await axios.get('https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko'); // parsing new at google news
+  const response = await axios.get('https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko').then(response => response.data); // parsing new at google news
 
   const html: string = response.data;
   const $ = cheerio.load(html, { xmlMode: true });
