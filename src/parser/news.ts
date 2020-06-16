@@ -4,7 +4,7 @@ import cheerio from 'cheerio';
 export const parse = async() => {
   const response = await axios.get('https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko').then(response => response.data); // parsing new at google news
 
-  const html: string = response.data;
+  const html: string = response;
   const $ = cheerio.load(html, { xmlMode: true });
 
   const titles: string[] = $('item > title').map((i, element) => $(element).text()).get();
